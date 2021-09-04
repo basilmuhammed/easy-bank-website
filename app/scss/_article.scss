@@ -1,0 +1,48 @@
+.articles{
+
+    background-color: $veryLightGrayBlue;
+}
+
+.article{
+   
+
+    &__grid{
+        display: grid;
+
+        grid-template-columns: repeat(auto-fit,minmax(14.375rem,1fr) );
+        gap: 1.875rem;
+        // grid-template-columns: 1fr;
+
+        // @include breakpoint-up(medium){
+        //     grid-template-columns: repeat(2,1fr);
+        // }
+        // @include breakpoint-up(large){
+        //     grid-template-columns: repeat(4,1fr);
+        // }
+    }
+    &__item{
+        padding: 0.2rem;
+        background-color:$white;
+        border-radius: 5px;
+        overflow: hidden;
+        text-decoration: none;
+        font-size: 0.9rem;
+        color: $grayBlue;
+    }
+    &__text{
+        padding: 2rem;
+    }
+    &__image{
+        background-image: url(/images/image-currency.jpg);
+        height: 12.5rem;
+        background-size: cover;
+        background-position: center;
+
+    }
+    &__auther{
+
+    }
+    &__title{
+
+    }
+}
